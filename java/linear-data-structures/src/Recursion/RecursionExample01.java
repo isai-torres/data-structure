@@ -9,10 +9,10 @@ public class RecursionExample01 {
   // Recursive method
   public static void walk(int steps) {
     System.out.println("Hello World");
-    if(steps == 0) { // We use this condition to stop the recursion
+    if(steps <= 1) { // We use this condition to stop the recursion (Base case)
       return;
     }
-    walk(steps - 1); // -1 subtract 1 from the steps every time the method is called
+    walk(steps - 1); // (Recursive case) -1 subtract 1 from the steps every time the method is called
   }
 }
 
